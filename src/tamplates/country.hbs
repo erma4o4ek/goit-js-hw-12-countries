@@ -1,0 +1,16 @@
+<h1 class="city_title">{{name}}</h1>
+<div class="container">
+    <ul class="city_list list">
+        <li class="city_item"><span class="bold">Capital:</span> {{capital}}</li>
+        <li class="city_item"><span class="bold">Population:</span> {{population}}</li>
+        <li class="city_item">
+            <span class="bold">Languages:</span>
+            <ul>
+                {{#each languages}}
+                <li class="city_item-lang">{{name}}</li>
+                {{/each}}
+            </ul>
+        </li>
+    </ul>
+    <img class="bigImg" src="{{flag}}" alt="{{name}}'s flag" width="250px">
+</div>
